@@ -1,0 +1,18 @@
+.card{
+    width: 20rem;
+    height: 26rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid silver;
+    border-radius: 5%;
+}
+.card:hover{
+    transform: rotateZ(20deg);
+    transition-delay: 2ms;
+    transition-duration: 1s;
+}

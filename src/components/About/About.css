@@ -1,0 +1,129 @@
+.About {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    padding: 0px;
+}
+
+.hero-img{
+    position: absolute;
+    left: 64%;
+    bottom: 30%;
+}
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.cards{
+    margin-right: 20px;
+    position: relative;
+}
+
+
+.cards>*{
+    position: absolute;
+}
+
+.show-more{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.show-more:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+
+}
+.btn{
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding:1rem 1.5rem;
+    background: #6b3030;
+    border-radius: 15px;
+    transition: 0.5s;
+    color: white;
+}
+.link{
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding:1rem 1.5rem;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #801414;
+}
+
+.hobbies-card :hover{
+    cursor: pointer;
+}
+
+
+
+.front1 {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+}
+@media screen and (min-width: 1075px){
+.flipped .front1 {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+}
+
+ .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+@media screen and (max-width: 968px){
+    .awesome{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+     .btn{
+        margin-top: 30px;
+    }
+    .cards{
+    display: none;
+    }
+    .no-mobile{
+        display: none;
+    }
+    .hero-img{
+        position: absolute;
+        left: 58%;
+        bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 454px){
+    .no-contact{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 664px){
+    .hero-img{
+        display: none;
+    }
+
+}
